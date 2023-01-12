@@ -5,15 +5,15 @@ let counter = 1;
 
 function incrementCounter() {
   counter++;
-  
   if (counter > 99) {
     counter = 0;
   }
-
   let counterString = counter.toString().padStart(2,'0');
 return counterString;
 } 
 
 for (let x=0; x<18; x++){ 
    y = incrementCounter() 
-    var elem = document.getElementsByName(`grdAnketSorular$ctl${y}$anketRadioList`); elem[4].checked = "true";}
+    var elem = document.getElementsByName(`grdAnketSorular$ctl${y}$anketRadioList`); 
+  elem[4].checked = "true";
+}
